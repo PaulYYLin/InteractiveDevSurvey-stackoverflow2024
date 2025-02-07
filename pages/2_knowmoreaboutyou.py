@@ -105,6 +105,7 @@ def main():
         st.markdown('<h4>What is your age?</h4>', unsafe_allow_html=True)
         age_options = list(distribution_data.index)
         st.selectbox("Select Your Age Group:", age_options, key="Age", label_visibility="collapsed")
+        st.session_state.user_age = st.session_state.Age
         st.markdown('</div>', unsafe_allow_html=True)
     
     # Right Column - Employment Status Question
@@ -113,6 +114,7 @@ def main():
         st.markdown('<h4>Which best describes your current employment status?</h4>', unsafe_allow_html=True)
         employment_options = list(distribution_data.columns)
         st.selectbox("Select your employment status:", employment_options, key="Employment", label_visibility="collapsed")
+        st.session_state.user_employment = st.session_state.Employment
         st.markdown('</div>', unsafe_allow_html=True)
 
     # Add validation before showing the continue button
