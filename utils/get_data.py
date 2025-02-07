@@ -5,7 +5,7 @@ from functools import lru_cache
 class GetData:
     def __init__(self):
         # 读取压缩的 CSV 文件
-        with gzip.open('survey_results_public.csv.gz', 'rt') as f:
+        with gzip.open('survey_results_public.csv.zip', 'rt') as f:
             self.data = pd.read_csv(
                 f,
                 usecols=lambda x: x in [
