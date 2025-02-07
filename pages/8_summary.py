@@ -215,7 +215,7 @@ def main():
     
     if st.button("⏎ Start Over", use_container_width=True):
         st.session_state.clear()
-        st.switch_page("pages/1_home.py")
+        st.switch_page("app.py")
 
 
 if __name__ == "__main__":

@@ -39,12 +39,6 @@ def create_heatmap(data):
     
     return fig
 
-def change_page():
-    # Save user selections to session state
-    if 'Age' in st.session_state and 'Employment' in st.session_state:
-        st.session_state.user_age = st.session_state.Age
-        st.session_state.user_employment = st.session_state.Employment
-        st.session_state.current_page = '3_doyouknow'
 
 def main():
     # Initialize client
@@ -124,10 +118,10 @@ def main():
     # Add validation before showing the continue button
     if 'Age' in st.session_state and 'Employment' in st.session_state:
         st.markdown('<div class="next-button">', unsafe_allow_html=True)
-        st.button("Continue ➤", 
+        if st.button("Continue ➤", 
                 key="next_page",
-                on_click=change_page,
-                use_container_width=True)
+                use_container_width=True):
+            st.switch_page("pages/3_doyouknow.py")
         st.markdown('</div>', unsafe_allow_html=True)
 
     # Create the heatmap

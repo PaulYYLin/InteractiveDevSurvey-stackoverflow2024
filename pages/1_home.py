@@ -115,10 +115,11 @@ def main():
         """, unsafe_allow_html=True)
         
         # Button logic
-        st.button("➤ Discover how AI is shaping the way developers code, debug, and innovate! 🔍",
+        if st.button("➤ Discover how AI is shaping the way developers code, debug, and innovate! 🔍",
                  key="find_out", 
                  use_container_width=True,
-                 on_click=change_page)
+                 ):
+            st.switch_page("pages/2_knowmoreaboutyou.py")
         st.markdown('</div>', unsafe_allow_html=True)
     
     with right_col:
@@ -126,9 +127,6 @@ def main():
             chart = create_ai_usage_chart(df)
             st.plotly_chart(chart, use_container_width=True)
 
-def change_page():
-    st.session_state.current_page = '2_knowmoreaboutyou'
-    st.session_state.should_rerun = True
 
 if __name__ == "__main__":
     main()
