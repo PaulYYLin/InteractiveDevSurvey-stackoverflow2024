@@ -1,5 +1,5 @@
 import streamlit as st
-from pages import home, knowmoreaboutyou, doyouknow, relationshiptocode, selectrelationship, favorable, summary
+from pages import 1_home, 2_knowmoreaboutyou, 3_doyouknow, 4_relationshiptocode, 5_selectrelationship, 6_favorable, 8_summary
 
 # Set page config must be the first Streamlit command
 st.set_page_config(
