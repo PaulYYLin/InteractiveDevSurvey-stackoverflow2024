@@ -1,17 +1,19 @@
 import pandas as pd
+import gzip
 from functools import lru_cache
 
 class GetData:
     def __init__(self):
-        # 只讀取需要的列來減少內存使用
-        self.data = pd.read_csv(
-            'survey_results_public.csv',
-            usecols=lambda x: x in [
-                'ResponseId', 'Age', 'Employment', 'MainBranch',
-                'EdLevel', 'AISelect', 'AISent', 'AIBen',
-                'AIToolCurrently Using'
-            ]
-        )
+        # 读取压缩的 CSV 文件
+        with gzip.open('survey_results_public.csv.gz', 'rt') as f:
+            self.data = pd.read_csv(
+                f,
+                usecols=lambda x: x in [
+                    'ResponseId', 'Age', 'Employment', 'MainBranch',
+                    'EdLevel', 'AISelect', 'AISent', 'AIBen',
+                    'AIToolCurrently Using'
+                ]
+            )
         
     @lru_cache(maxsize=1)
     def get_BI(self):
