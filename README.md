@@ -3,11 +3,13 @@
 ## 🌐 Access
 Visit the live application at: [https://hbttsh3mtj9c2wfjc9rasq.streamlit.app/](https://hbttsh3mtj9c2wfjc9rasq.streamlit.app/)
 
-
 ## 🌟 Overview
 An interactive web application that creates personalized data stories based on the [Stack Overflow Developer Survey 2024](https://survey.stackoverflow.co/). Users can explore AI adoption trends and insights while comparing their own developer journey with the global developer community.
 \
 This project uses data from the Stack Overflow Developer Survey 2024 to provide insights into AI adoption trends in the developer community. All visualizations and analyses are based on survey responses and aim to provide meaningful insights for the development community.
+
+<img width="1375" alt="image" src="https://github.com/user-attachments/assets/66926ad2-0486-4aa3-a54d-2b3465ff8515" />
+
 
 ## ✨ Features
 
