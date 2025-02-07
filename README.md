@@ -1,7 +1,10 @@
 # Interactive Developer Survey Story - Stack Overflow 2024
 
 ## 🌐 Access
-Visit the live application at: [https://hbttsh3mtj9c2wfjc9rasq.streamlit.app/](https://hbttsh3mtj9c2wfjc9rasq.streamlit.app/)
+
+### [Click Here to Start your Survey 🚀](https://hbttsh3mtj9c2wfjc9rasq.streamlit.app/)
+
+### [Click Here to See Demo Video](https://drive.google.com/file/d/13MPaNQCMCx_QNr162OQxdEBBZ1bC2Sp5/view?usp=sharing)
 
 ## 🌟 Overview
 An interactive web application that creates personalized data stories based on the [Stack Overflow Developer Survey 2024](https://survey.stackoverflow.co/). Users can explore AI adoption trends and insights while comparing their own developer journey with the global developer community.
