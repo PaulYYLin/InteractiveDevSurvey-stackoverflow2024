@@ -122,6 +122,6 @@ def main():
             'education_level': education_index
         }
         # Switch to the favorable page
-        st.switch_page("pages/favorable.py")
+        st.switch_page("pages/6_favorable.py")
 if __name__ == "__main__":
     main()

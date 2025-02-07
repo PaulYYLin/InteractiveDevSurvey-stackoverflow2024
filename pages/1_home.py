@@ -56,7 +56,7 @@ def create_ai_usage_chart(df):
 def main():
     # Initialize session state
     if 'current_page' not in st.session_state:
-        st.session_state.current_page = 'home'
+        st.session_state.current_page = '1_home'
     
     # Get AI usage data
     df = get_ai_usage_data()
@@ -127,7 +127,7 @@ def main():
             st.plotly_chart(chart, use_container_width=True)
 
 def change_page():
-    st.session_state.current_page = 'knowmoreaboutyou'
+    st.session_state.current_page = '2_knowmoreaboutyou'
     st.session_state.should_rerun = True
 
 if __name__ == "__main__":

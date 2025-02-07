@@ -44,7 +44,7 @@ def change_page():
     if 'Age' in st.session_state and 'Employment' in st.session_state:
         st.session_state.user_age = st.session_state.Age
         st.session_state.user_employment = st.session_state.Employment
-        st.session_state.current_page = 'doyouknow'
+        st.session_state.current_page = '3_doyouknow'
 
 def main():
     # Initialize client

@@ -134,7 +134,7 @@ def main():
                 'sentiment': user_sentiment
             })
             # Switch to the favorable page
-            st.switch_page("pages/knowmoreaboutidea.py")
+            st.switch_page("pages/7_knowmoreaboutidea.py")
     
     with right_col:
         fig = create_pie_chart(sentiment_counts)

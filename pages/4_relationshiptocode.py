@@ -43,11 +43,11 @@ def main():
     with col2:
         st.markdown("<br>" * 5, unsafe_allow_html=True)
         if st.button("⏎ Previous Page", use_container_width=True):
-            st.switch_page("pages/doyouknow.py")
+            st.switch_page("pages/3_doyouknow.py")
         
         st.markdown("<br>", unsafe_allow_html=True)
         if st.button("Next Page ➤", use_container_width=True):
-            st.switch_page("pages/selectrelationship.py")
+            st.switch_page("pages/5_selectrelationship.py")
 
 if __name__ == "__main__":
     main()

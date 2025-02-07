@@ -175,3 +175,5 @@ cython_debug/
 
 
 survey_results_public.csv
+
+pyvenv.cfg

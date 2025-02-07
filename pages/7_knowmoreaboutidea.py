@@ -114,7 +114,7 @@ def main():
     # Add navigation button at the bottom
     
     if st.button("➤ LET'S HEADING TO DESTINATION OF SURVEY", use_container_width=True ,):
-        st.switch_page("pages/summary.py")
+        st.switch_page("pages/8_summary.py")
 
 
 if __name__ == "__main__":

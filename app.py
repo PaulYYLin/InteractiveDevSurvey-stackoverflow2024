@@ -9,12 +9,13 @@ st.set_page_config(
     menu_items={} # This removes the hamburger menu
 )
 
-# Add custom CSS to hide the navigation menu
+# Add custom CSS to hide the navigation menu and sidebar
 st.markdown("""
     <style>
         #MainMenu {visibility: hidden;}
         footer {visibility: hidden;}
         header {visibility: hidden;}
+        section[data-testid="stSidebar"] {display: none;}
     </style>
 """, unsafe_allow_html=True)
 
